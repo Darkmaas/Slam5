@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -34,7 +35,10 @@ public class NewsActivity extends AppCompatActivity implements View.OnClickListe
         btn_about.setOnClickListener(this);
 
         Intent intent= getIntent();
-        EditText editText = findViewById(R.id.log_recup);
+        String login = intent.getStringExtra("login");
+        TextView log =(TextView)findViewById(R.id.log_recup);
+        log.setText(String.valueOf(login));
+
 
     }
     @Override

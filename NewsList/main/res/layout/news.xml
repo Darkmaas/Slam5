@@ -10,36 +10,37 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_weight="5">
+            android:layout_weight="3">
         </LinearLayout>
-        <EditText
+        <TextView
             android:id="@+id/log_recup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.01"/>
+            android:layout_weight="0.01"
+            />
         <Button
             android:id="@+id/back"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+            android:layout_weight="0.05"
             android:text="@string/back"/>
         <Button
             android:id="@+id/logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+            android:layout_weight="0.05"
             android:text="Logout"/>
         <Button
             android:id="@+id/details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+            android:layout_weight="0.05"
             android:text="details"/>
         <Button
             android:id="@+id/about"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+            android:layout_weight="0.05"
             android:text="About"/>
 
 

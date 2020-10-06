@@ -20,6 +20,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         Button btn_login =(Button)findViewById(R.id.login);
         btn_login.setOnClickListener(this);
+        
     }
 
 
@@ -30,6 +31,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             case R.id.login:
                 intent = new Intent(this, NewsActivity.class);
                 EditText editText= findViewById(R.id.log);
+                String msg = (editText.getText().toString());
+                NewsListApplication app= (NewsListApplication) getApplicationContext();
+                app.setLogin(msg);
                 intent.putExtra("login", editText.getText().toString());
                 startActivity(intent);
                 break;

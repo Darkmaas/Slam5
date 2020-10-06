@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,6 +21,12 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
         btn_back.setOnClickListener(this);
 
         Log.i(TAG,"Ouverture activité"+getLocalClassName());
+
+        NewsListApplication app = (NewsListApplication) getApplicationContext();
+        String login = app.getLogin();
+        TextView log =(TextView)findViewById(R.id.log_recup1);
+        log.setText(String.valueOf(login));
+
     }
 
     @Override
